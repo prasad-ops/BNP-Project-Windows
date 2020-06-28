@@ -36,8 +36,8 @@ public class SearchClass {
 
 			List<String> listFile1 = Arrays.asList(fileDir.list());
 		
-			a=listFile1.stream().anyMatch(filesearch::equalsIgnoreCase);
-		
+			//a=listFile1.stream().anyMatch(filesearch::equalsIgnoreCase);
+		a=listFile1.contains(filesearch);
 	   if(a==true) {
 				System.out.println(filesearch+" file is found and it is available in current directory\n\n");
 			}
